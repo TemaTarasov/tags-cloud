@@ -1,0 +1,44 @@
+{
+  "name": "tags",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "npm run prod; npm run start:server",
+
+    "start:server": "node ./bin/www",
+
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18",
+    "bootstrap": "^4.0.0",
+    "cross-env": "^5.1",
+    "css-loader": "^2.1.0",
+    "laravel-mix": "^4.0.7",
+    "node-sass": "^4.11.0",
+    "normalize.scss": "^0.1.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-google-maps": "^9.4.5",
+    "react-imask": "^4.1.5",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-slick": "0.21.0",
+    "resolve-url-loader": "^2.3.1",
+    "sass-loader": "^7.1.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

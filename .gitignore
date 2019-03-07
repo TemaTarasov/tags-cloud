@@ -1,0 +1,12 @@
+.idea
+
+node_modules
+dist
+
+**/*.lock
+**/*-lock.json
+
+**/*.log
+
+.DS_Store
+**/.DS_Store
